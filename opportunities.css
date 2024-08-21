@@ -1,0 +1,110 @@
+/* FOR OPPORTUNITIES.HTML */
+.logo {
+  height: 100px;
+  width: 100px;
+  justify-content: flex-start;
+}
+
+nav {
+  padding: 5px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px;
+  font-size: 18px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+/* General body styling to set font, background color, and base layout properties */
+body {
+    font-family: 'Times New Roman', Times, serif;     /* Set the font for the page */
+    background-color: #eed8ff;     /* Light blue background color for the page */
+    color: #000;    /* Text color set to black */
+    margin: 20px;    /* Margin around the entire content of the body */
+    padding: 0;     /* No padding inside the body */
+    display: flex;    /* Enables the flexible box layout model */
+    flex-direction: column;    /* Stacks the flex items vertically */
+    align-items: center;    /* Centers the flex items on the cross axis */
+}
+
+/* Styling for the container div that holds form elements */
+.container {
+    width: 80%; /* Container width is 80% of its parent element */
+    max-width: 900px;/* Maximum width to prevent the container from being too wide */
+    background-color: #fff5ba;/* Background color to match the body */
+    padding: 20px; /* Padding around the inside of the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Shadow for 3D effect */
+}
+
+/* Styling for headings inside the container */
+h3,
+h4 {
+    color: #000; /* Text color for headings */
+    text-align: center;  /* Center-align text */
+    margin-bottom: 20px;/* Space below headings */
+}
+
+/* Flexbox layout for questions and options to align items */
+.question,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;/* Use flexbox to layout children elements */
+    align-items: center;     /* Align items vertically in the center */
+    margin-bottom: 10px;     /* Space below each question and checkbox group */
+}
+
+/* Additional styling for question text next to radio buttons */
+.question span {
+    margin-left: 10px;
+    /* Space between radio button and the question text */
+    font-weight: bold;
+    /* Make the font weight bold */
+}
+
+/* Checkbox group label styling */
+.checkbox-group label {
+    margin-right: 20px;
+    /* Space after each label */
+}
+
+/* Button styling for submission */
+button {
+    margin-top: 20px;
+    /* Space above the button */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    background-color: #007bff;
+    /* Background color of the button */
+    color: white;
+    /* Text color inside the button */
+    border: none;
+    /* No border for the button */
+    border-radius: 5px;
+    /* Rounded corners for the button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-size: 16px;
+    /* Font size for the text inside the button */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue background on hover */
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mo: The text typed in <title> will show up on the browser's tab bar. -->
+    <title>FemTech | Opportunities</title>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="opportunities.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+      <header>
+        <nav class="navbar">
+          <div class="nav-branding">
+            <img src="Media/FemTechLogo JUSTLOGO.jpg" alt="FemTech logo" class="logo">
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="aboutUs.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="opportunities.html" class="nav-link activeTab">Opportunities</a></li>
+            <li class="nav-item"><a href="jobMatchQuiz.html" class="nav-link">Job Match Quiz</a></li>
+            <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+            <li class="nav-item"><a href="contactUs.html" class="nav-link">Contact Us</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+    <hr>
+    <!-- Code... -->
+    <div class="container">
+        <h3>Before you have access to our network, we need to know a few things...</h3>
+        <h4>Are you currently a student?</h4>
+        <div class="question">
+            <label>
+                <input type="radio" name="student_status" value="Yes"> Yes
+            </label>
+            <span> (Are you in middle school, high school, or university?)</span>
+        </div>
+        <div class="question">
+            <label>
+                <input type="radio" name="student_status" value="No"> No
+            </label>
+            <span> (Have you graduated from high school and/or university?)</span>
+        </div>
+
+        <h4>What are some <u>jobs</u> you’re interested in:</h4>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="jobs" value="Software Engineer (SWE)"> Software Engineer (SWE)</label>
+            <label><input type="checkbox" name="jobs" value="Hardware Engineer"> Hardware Engineer</label>
+            <label><input type="checkbox" name="jobs" value="Project Manager (PM)"> Project Manager (PM)</label>
+            <label><input type="checkbox" name="jobs" value="User Experience (UX) Designer"> User Experience (UX)
+                Designer</label>
+            <label><input type="checkbox" name="jobs" value="Back-End Developer"> Back-End Developer</label>
+            <label><input type="checkbox" name="jobs" value="Cybersecurity Engineer"> Cybersecurity Engineer</label>
+            <label><input type="checkbox" name="jobs" value="Full Stack Developer"> Full Stack Developer</label>
+            <label><input type="checkbox" name="jobs" value="Mechanical Engineer"> Mechanical Engineer</label>
+            <label><input type="checkbox" name="jobs" value="Front-End Developer"> Front-End Developer</label>
+            <label><input type="checkbox" name="jobs" value="Data Scientist"> Data Scientist</label>
+            <label><input type="checkbox" name="jobs" value="User Experience Researcher"> User Experience
+                Researcher</label>
+        </div>
+
+        <h4>What are some <u>industries</u> you’re interested in:</h4>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="industries" value="Technology"> Technology</label>
+            <label><input type="checkbox" name="industries" value="Transportation"> Transportation</label>
+            <label><input type="checkbox" name="industries" value="Pharmaceutical"> Pharmaceutical</label>
+            <label><input type="checkbox" name="industries" value="Telecommunications"> Telecommunications</label>
+            <label><input type="checkbox" name="industries" value="Manufacturing"> Manufacturing</label>
+            <label><input type="checkbox" name="industries" value="Mining"> Mining</label>
+            <label><input type="checkbox" name="industries" value="Hospitality"> Hospitality</label>
+            <label><input type="checkbox" name="industries" value="Media"> Media</label>
+            <label><input type="checkbox" name="industries" value="Agriculture"> Agriculture</label>
+            <label><input type="checkbox" name="industries" value="Education"> Education</label>
+            <label><input type="checkbox" name="industries" value="Finance/Economics"> Finance/Economics</label>
+            <label><input type="checkbox" name="industries" value="Health care"> Health care</label>
+        </div>
+    </div>
+
+    <button id="submit">Submit</button>
+
+    <div id='results'> </div>
+    
+    <footer>
+        <hr>
+        <h4>© 2024 FemTech | All rights reserved.</h4>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="opportunities.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

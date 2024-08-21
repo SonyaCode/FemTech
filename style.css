@@ -1,0 +1,245 @@
+/* FOR ALL HTML PAGES */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Mo: Styling the body tag will allow us to change aspects of every single thing on the website. If there is a specific font we want to be showen throughout the site, this is where it can be placed. */
+body {
+  background: #eed8ff;
+  color: #4c218c;
+
+  a {
+    color: #4c218c;
+  }
+
+  a:hover {
+    color: #B5B9FF;
+  }
+  
+  ::selection {
+    background: #4c218c;
+    color: #eed8ff;
+  }
+}
+
+.logo {
+  height: 75px;
+  width: 75px;
+}
+
+.company {
+  
+}
+
+/* nav ul li {
+  display: inline;
+  margin: 15px;
+  font-size: 18px;
+} */
+
+nav ul li {
+  list-style: none;
+}
+
+/* nav ul li a {
+  text-decoration: none;
+} */
+
+nav ul li a {
+  text-decoration: none;
+}
+
+/* nav {
+  padding: 5px 40px;
+  min-height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+} */
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+/* nav ul {
+  list-style-type: none;
+  list-style: none;
+} */
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+  display: inline;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s 
+ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #4c218c;
+}
+
+.activeTab {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+  nav, nav ul {
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar.bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar.bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -150%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #a171c6;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+hr {
+  background-color: #81149f;
+  height: 3px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bigger-text {
+  font-size: 150%;
+}
+
+.middle {
+  align-content: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.spacing {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+/* FOR INDEX.HTML ONLY */
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.placeholderImg {
+  width: 50%;
+  height: auto;
+}
+
+.factDiv {
+  word-wrap: break-word;
+  font-size: 150%;
+  padding: 20px;
+}
+
+.fact-button {
+  color: white;
+  font-weight: bold;
+  font-size: 200%;
+  background-color: #7f347f;
+  padding: 30px;
+  margin: auto;
+  border: 0px;
+  border-radius: 30px;
+}
+
+.fact-button:hover {
+  background-color: #db7bdb;
+  color: purple;
+}
+
+.statement-container {
+  background-color: #a359a0;
+  color: #ffffff;
+  font-weight: bold;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 570px) {
+  .div1 {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+  }
+
+  .div1 h1 {
+    font-size: 100%;
+  }
+}

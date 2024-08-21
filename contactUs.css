@@ -1,0 +1,46 @@
+/* FOR CONTACTUS.HTML */
+
+input,
+textarea {
+  display: block;
+  border: 2px solid #a359a0;
+  margin: 10px;
+}
+
+.name,
+.email {
+  width: 100%;
+  max-width: 300px;
+  height: 25px;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+}
+
+.submit {
+  color: #91408f;
+  background-color: white;
+  font-weight: bold;
+  width: 75px;
+  height: 30px;
+}
+
+.submit:hover {
+  background-color: #dedede;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form {
+  border: 2px solid #a359a0;
+  padding: 25px;
+  background-color: #FFCCF9;
+  max-width: 100%;
+}
